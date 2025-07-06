@@ -113,6 +113,7 @@
                     <option>eWallet</option>
                     <option>Bank Transfer</option>
                 </select>
+                
                 <button type="submit" class="popup-form popup-purchase-btn" id="purchase-btn" style="display:block;">Purchase</button>
             </form>
         </div>
@@ -192,6 +193,12 @@ const googleForm = document.getElementById('checkout-form');
 
 googleForm.addEventListener('submit', e => {
     e.preventDefault();
+
+    if (cart.length === 0) {
+        alert("Please select a ticket before proceeding to purchase.");
+        return;
+    }
+
     fetch(scriptURL, { method: 'POST', body: new FormData(googleForm)})
       .then(response => {
         alert("Form submitted successfully!");
