@@ -3,21 +3,21 @@
 
 @font-face {
   font-family: 'SF Pro Text Thin';
-  src: url('/fonts/SFProText-Thin.ttf') format('truetype');
+  src: url('./fonts/SFProText-Thin.ttf') format('truetype');
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'SF Pro Text Regular';
-  src: url('/fonts/SFProText-Regular.ttf') format('truetype');
+  src: url('./fonts/SFProText-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'SF Pro Text Bold';
-  src: url('/fonts/SFProText-Bold.ttf') format('truetype');
+  src: url('./fonts/SFProText-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -46,7 +46,7 @@ body {
     background: #fff;
     margin-top: 32px;
     margin-bottom: 64px;
-    content:url(/resource/alt-logo.png);
+    content:url(./resource/alt-logo.png);
 }
 
 .label-logo {
@@ -54,7 +54,7 @@ body {
     margin-top: 32px;
     margin-left: 250px;
     margin-bottom: 64px;
-    content:url(/resource/hiwaga-hckt0n.png);
+    content:url(./resource/hiwaga-hckt0n.png);
 }
 
 .nav-links {
